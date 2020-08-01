@@ -1,0 +1,18 @@
+:root{
+    --mainbgcolor:rgb(8, 32, 48);
+    --secbgcolor:rgba(243, 246, 247, 0.8);
+    --h1text:white;
+    --maintext:rgb(0, 0, 0);
+    --sectext:#4b5156;
+    --bordercoler:rgb(224, 219, 219);
+    --themeDot:#24292e;
+    --formcolor:rgb(196, 196, 195);
+    --shadowcolor:rgba(243, 253, 253, 0.8);
+    --previewcolor:rgba(243, 246, 247, 0.8);
+   --previewborder:#47b8ec;
+   --formbg:rgb(255, 255, 255);
+   --formtextcolor:white;
+   --btn:black;
+   --feedercolor:rgb(8, 32, 48);
+}
+
