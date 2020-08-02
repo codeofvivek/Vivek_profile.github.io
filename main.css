@@ -18,7 +18,7 @@
 
 }body *{
     transition: .5s ease-in
-    font-family: 'Source Code Pro', monospace;
+    font-family 'Source Code Pro', monospace;
 
 }
 
@@ -111,6 +111,9 @@ span,p, li,input,textarea{
     padding-bottom: 50px;
    
 }
+.left-col h3{
+    color: var(--maintext);
+}
 #profile{
   
     display: block;
@@ -195,6 +198,9 @@ h3,h2{
 	background-color:  var(--previewcolor);
 	padding:15px;
 	position: relative;
+}
+#preview h3{
+    color: var(--maintext);
 }
 
 .corner{
