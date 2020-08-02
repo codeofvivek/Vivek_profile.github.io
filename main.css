@@ -17,9 +17,8 @@
     
 
 }body *{
-    transition: .7s ease-in;
+    transition: 0.7s ease-in;
     font-family: 'Source Code Pro', monospace;
-
 }
 
 
@@ -294,7 +293,7 @@ h1{
     grid-template-columns: 1fr;
     
 }
-.form{
+.form h3{
     color: var(--maintext);
 }
 #contact-form{
