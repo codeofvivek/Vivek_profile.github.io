@@ -17,8 +17,8 @@
     
 
 }body *{
-    transition: .5s ease-in
-    font-family 'Source Code Pro', monospace;
+    transition: .5s ease-in;
+    font-family: 'Source Code Pro', monospace;
 
 }
 
@@ -250,14 +250,7 @@ h1{
       display: flex;
       justify-content: space-around;
     
-    
 }
-
-.quote h3{
-    color: black;
-}
-
-
 .portfolio{
     width: 90%;
     
@@ -288,7 +281,7 @@ h1{
     color: var(--h1text);
 }
 #insta{
-    border-radius: 20px;
+    border-radius: 50px;
 }
 .form{
     width: 90%;
@@ -300,6 +293,9 @@ h1{
     display: grid;
     grid-template-columns: 1fr;
     
+}
+.form{
+    color: var(--maintext);
 }
 #contact-form{
 	display: block;
