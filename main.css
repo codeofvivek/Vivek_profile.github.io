@@ -33,7 +33,7 @@ a{
     text-decoration: none;
     color: black;
 }
-h1{
+h1,h5{
     color: var(--h1text);
     font-family: 'Inconsolata', monospace;
     animation:blink .5s ease-in infinite ;
@@ -241,20 +241,48 @@ h1{
      border: 1px  solid  rgb(224, 219, 219);
      border-radius:3px 3px 3px 3px;
       padding: 10px;
-     display: grid;
-     grid-template-columns: 1fr;
+      display: flex;
+      justify-content: space-around;
+    
+    
 }
+
+.quote h3{
+    color: black;
+}
+
+
 .portfolio{
     width: 90%;
+    
     margin: auto;
     margin-bottom: 34px;;
     padding: 10px;
      background-color: var(--secbgcolor);
      border: 1px  solid  rgb(224, 219, 219);
      border-radius:3px 3px 3px 3px;
-   
-     display: grid;
-     grid-template-columns: 1fr;
+     display: flex;
+     justify-content: space-around;
+     
+    
+}
+#porthead{
+    text-align: center;
+    margin-bottom: -19px;
+}
+.port{
+    margin-top: 40px;
+    margin-bottom: 20px;;
+    width: 300px;
+    border: 1px solid rgb(224, 219, 219);
+    padding: 10px;
+    background-color: var(--mainbgcolor);
+}
+.port p, h3,h4,span{
+    color: var(--h1text);
+}
+#insta{
+    border-radius: 20px;
 }
 .form{
     width: 90%;
@@ -412,22 +440,92 @@ h1{
         margin-left: 24px;
         margin-bottom: 20px;;
     }
+    .portfolio{
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .port{
+      max-width: 600px;
+      margin: 24px auto
+    }
+    #porthead{
+       
+        margin-bottom: -28px;
+    }
 
 }
+@media screen and (max-width: 620px){
+    .port{
+        max-width: 400px;
+        margin: 17 auto;
+     }
+}
 
-@media screen and (max-width: 400px){
-	#shadow{
-		max-width: 280px;
-		height: 180px;
-		padding-left: 10px;
-        padding-top: 10px;
-        margin-left: 30px;
+
+@media screen and (max-width: 432px){
+    .intro-wrapper{
+
+        width: 90%;
+        margin-left: 38px;
+    }
+    
+    #shadow{
+     max-width: 275px;
+    height: 162px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: -33px;
 	}
 
 	#preview{
-		width: 280px;
+		width: 240px;
 
-	}
+    }
+    .contact{
+        padding-right: 28px;
+}
+
 
 }
 
+@media screen and (max-width: 380px){
+    .contact{
+        padding-right: 10px;
+}
+.intro-wrapper{
+
+    width: 95%;
+    margin-left: 9px;
+}
+#profile{
+    width: 180px;
+    height: 160px;
+   margin-left: 76px;
+}
+#profile:hover{
+    width: 210px;
+    height: 180px;
+}
+.left-col h3{
+    margin-right: 13px;
+}
+#theme{
+    margin-left: -18px;
+
+}
+#shadow {
+    max-width: 233px;
+    height: 134px;
+    margin-left: -30px;
+    margin-top: -67px;
+}
+
+#preview{
+    width: 206px;
+    height: 110px;
+    margin-left: 22px;
+    margin-top: 15px;
+
+}
+
+}
