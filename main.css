@@ -17,8 +17,9 @@
     
 
 }body *{
-    transition: 0.7s ease-in;
+    transition: .7s ease-in;
     font-family: 'Source Code Pro', monospace;
+
 }
 
 
@@ -249,6 +250,9 @@ h1{
       display: flex;
       justify-content: space-around;
     
+}
+.quote h3{
+    color: var(--maintext);
 }
 .portfolio{
     width: 90%;
