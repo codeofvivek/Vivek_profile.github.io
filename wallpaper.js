@@ -28,8 +28,8 @@ function setTheme(mode){
 		document.getElementById('theme_style').href = 'sky_blue.css'
 	}
 
-	if(mode == 'yellowgreen'){
-		document.getElementById('theme_style').href = 'yellow_green.css'
+	if(mode == 'blue'){
+		document.getElementById('theme_style').href = 'blue.css'
 	}
 
 	if(mode == 'voilet'){
