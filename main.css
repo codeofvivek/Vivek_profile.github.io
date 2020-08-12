@@ -188,6 +188,10 @@ h3,h2{
     padding-top: 10px;
     border-radius: 0px 40px 3px 0px;
     border: 2.5px solid #e2eee2;
+ transition: ease-in-out .3s;
+}
+#shadow:hover{
+    box-shadow: 3px 3px 4px 4px rgb(87, 88, 88); 
 }
 
 #preview{
@@ -198,6 +202,10 @@ h3,h2{
 	background-color:  var(--previewcolor);
 	padding:15px;
 	position: relative;
+	 transition: ease-in-out .3s;
+}
+#preview:hover{
+    box-shadow: 3px 3px 4px 4px rgb(87, 88, 88); 
 }
 #preview h3{
     color: var(--maintext);
