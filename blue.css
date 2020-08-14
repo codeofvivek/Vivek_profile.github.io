@@ -1,21 +1,18 @@
 :root{
-    --mainbgcolor:rgb(219, 232, 241);
-    --secbgcolor:rgb(5, 50, 82);
+    --mainbgcolor:rgb(182, 214, 226);
+    --secbgcolor:white;
     --h1text:rgb(0, 0, 0);
-    --maintext:rgb(255, 255, 255);
-    --sectext:#d7dbdf;
+    --maintext:rgb(0, 0, 0);
+    --sectext:#4b4d4e;
     --bordercoler:rgb(224, 219, 219);
     --themeDot:#24292e;
     --formcolor:rgb(196, 196, 195);
-    --shadowcolor:rgb(219, 232, 241);
-    --previewcolor:rgb(5, 50, 82);
+    --shadowcolor:rgb(182, 214, 226);
+    --previewcolor:white;
    --previewborder:rgb(19, 80, 124,.8);
    --formbg:rgb(255, 255, 255);
    --formtextcolor:black;
    --btn:black;
-   --feedercolor:rgb(255, 255, 255);
+   --feedercolor:rgb(0, 0, 0);
 }
 
-a,.home{
-    color:rgb(245, 241, 241);
-}
