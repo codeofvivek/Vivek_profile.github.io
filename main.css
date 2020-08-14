@@ -1,5 +1,5 @@
 :root{
-    --mainbgcolor:rgba(232, 236, 236, 0.938);
+    --mainbgcolor:rgb(232, 240, 219);
     --secbgcolor:white;
     --maintext:black;
     --h1text:black;
@@ -7,16 +7,16 @@
     --bordercoler:rgb(224, 219, 219);
     --themeDot:#24292e;
     --formcolor:rgb(196, 196, 195);
-    --shadowcolor:rgba(195, 219, 170, 0.8);
-    --previewcolor:rgba(232, 241, 225, 0.8);
-    --previewborder:#17A316;
+    --shadowcolor:rgb(222, 231, 206);
+    --previewcolor:white;
+    --previewborder:#c8ecb3;
     --formbg:black;
     --btn:white;
    --formtextcolor:black;
    --feedercolor:black;
-    
+}
 
-}body *{
+body *{
     transition: .7s ease-in;
     font-family: 'Source Code Pro', monospace;
 
@@ -147,7 +147,7 @@ justify-content: center;
 	cursor: pointer;
 }
 #light{
-      background-color:white; 
+      background-color:rgb(232, 240, 219);
      
 }
 #skyblue{
@@ -155,7 +155,7 @@ justify-content: center;
    
 }
 #blue{
-   background-color:rgb(219, 232, 241);
+   background-color:rgb(182, 214, 226);
   
 }
 #voilet{
