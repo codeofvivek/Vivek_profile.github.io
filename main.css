@@ -127,8 +127,6 @@ span,p, li,input,textarea{
     transition: .9s ease-in-out;
 }
 #profile:hover{
-    width:270px;
-    height: 250px;
     transform: rotate(360deg);
 }
 #theme{
