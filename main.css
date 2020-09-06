@@ -127,7 +127,7 @@ span,p, li,input,textarea{
     transition: .9s ease-in-out;
 }
 #profile:hover{
-    transform: rotate(360deg);
+    transform:rotate(360deg);
 }
 #theme{
 display: flex;
