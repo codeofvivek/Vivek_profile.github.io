@@ -126,9 +126,7 @@ span,p, li,input,textarea{
     border-radius: 5px;
     transition: .9s ease-in-out;
 }
-#profile:hover{
-    transform:rotate(360deg);
-}
+
 #theme{
 display: flex;
 justify-content: center;
