@@ -296,6 +296,8 @@ h1{
 .port p, h3,h4,span{
     color: var(--h1text);
 }
+ul li a{
+	color: var(--h1text);
 #insta{
     border-radius: 50px;
 }
