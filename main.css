@@ -31,7 +31,7 @@ html, body{
 }
 a{
     text-decoration: none;
-    color: black;
+  
 }
 h1,h5{
     color: var(--h1text);
@@ -298,6 +298,7 @@ h1{
 }
 ul li a{
 	color: var(--h1text);
+}
 #insta{
     border-radius: 50px;
 }
