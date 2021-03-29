@@ -55,7 +55,7 @@ async function getinfo() {
    }
    else {
       try {
-         let api = `http://api.openweathermap.org/data/2.5/weather?q=${text_value}&appid=9481a40688c53c9ae4f8c6d825ddcf4a`;
+         let api = `https://api.openweathermap.org/data/2.5/weather?q=${text_value}&appid=9481a40688c53c9ae4f8c6d825ddcf4a`;
          const response = await fetch(api);
          const data = await response.json();
          const arrdata = [data];
