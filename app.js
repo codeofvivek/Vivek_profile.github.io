@@ -80,16 +80,11 @@ async function getinfo() {
             icon.innerHTML= `<i class="fa fa-sun"> Clear</i>`;
          }
          datahide.classList.remove('data_hide');
-        
       } catch {
-   
          city_name_res.innerText="Plz write correct city name.";
          datahide.classList.add('data_hide');
       
       }
    }
 }
-// icon.innerHTML =
-//
-// 
-// 
+
