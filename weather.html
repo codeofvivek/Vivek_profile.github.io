@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ 
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar" id="navbar">
+      <a href="#" class="logo">VG</a>
+      <div class="menu">
+        <span onclick="togglemenu()">&#9776;</span>
+
+        <ul id="list">
+          <li class="item">
+            <a href="app.html" target="_">Home</a>
+          </li>
+          <li class="item">
+            <a href="weather.html" target="_">Weather</a>
+          </li>
+          <li class="item">
+            <a href="about.html" target="_">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="weathersection">
+    <div class="input">
+      <input type="text" id="text" placeholder="enter city name">
+      <button class="btn1" onclick="getinfo()" id="btn">search</button>
+    </div>
+    <div class="result">
+      <p class="date" id="date">date</p>
+      <div class="cityname" id="cityname">
+        <p id="city_name_res"></p>
+      </div>
+      <div class="res data_hide"  id="res">
+       <div class="tempbox">
+        <h3 id="temp"> </h3>
+        <p class="icon" id="icon"></i></p>
+       </div>
+       
+     
+      <div class="min_max_temp">
+        <p id="max_min_temp"></p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <footer>
+    <p>created by @VIVEK GUPTA</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    let date=document.getElementById('date');
+    date.innerHTML=`${(new Date()).toDateString()} `;
+  </script>
+</body>
+
+</html>
