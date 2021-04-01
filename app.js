@@ -18,21 +18,6 @@ function togglemenu() {
       navbar.style.backgroundColor = "rgba(227, 233, 197,.2)";
    }
 }
-let i = 0;
-let dot = document.querySelectorAll('.dot');
-let images = ['image/image1.jfif', 'image/image2.png', 'image/image3.jfif', 'image/image4.png', 'image/image5.jfif'];
-let img = document.getElementById('image');
-function slider() {
-
-   img.src = images[i];
-   if (i < images.length - 1) {
-      i++
-   } else {
-      i = 0;
-   }
-   setTimeout("slider()", 2000)
-}
-slider();
 // api_working
 let btn = document.getElementById('btn');
 async function getinfo() {
