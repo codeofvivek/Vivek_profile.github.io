@@ -331,7 +331,7 @@ ul li {
     padding: 1rem;
 } */
 .fa{
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 .fa span{
     font-size: 1.2rem;
@@ -342,11 +342,18 @@ ul li {
 .fa-cloud{
     color: white;
 }
-.fa-cloud-rain{
-    color: rgb(97, 192, 236);
+.fa-cloud-rain,.fa-cloud-moon-rain{
+    color: rgb(196, 226, 240);
+}
+.fa-moon-stars,.fa-moon{
+    color: rgb(196, 226, 240);
 }
 .fa-fog{
     color: rgb(108, 158, 235);
+}
+.far.fa-sun{
+    color: rgb(196, 226, 240);
+    font-size: 2rem;
 }
 @media screen and (max-width:800px){
     .btn1{
