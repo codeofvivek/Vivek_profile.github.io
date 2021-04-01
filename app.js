@@ -1,4 +1,11 @@
 console.log("it's working")
+let date = document.getElementById('date');
+let time = document.getElementById('time');
+let currentdate=(new Date()).toDateString();
+let currenthour=(new Date().getHours()) ;
+let currentmin= new Date().getMinutes();
+date.innerHTML = `${currentdate} `;
+time.innerHTML = `${currenthour} : ${currentmin} `;
 function togglemenu() {
    let navbar = document.getElementById('navbar')
    if (navbar.style.height == "80px") {
@@ -53,21 +60,32 @@ async function getinfo() {
          const temp_condition = arrdata[0].weather[0].main;
          // max_min_temp.innerHTML=`min_temp = ${(arrdata[0].main.temp_min-(273)).toFixed(2)} <sup>o</sup>C ||  max_temp = ${(arrdata[0].main.temp_max-(273)).toFixed(2)} <sup>o</sup>C`
          datahide.classList.remove('data_hide');
-         if (temp_condition === 'Clear') {
+        if (temp_condition === 'Clear'  && (currenthour<18  && currenthour>4 )) {
             icon.innerHTML = `<i class="fa fa-sun">  <span>  sunny</span></i>`;
-         } else if (temp_condition === 'Cloud') {
+         }else if(temp_condition === `Clear`  && (currenthour< 23  && currenthour>18 )||(currenthour< 4 && currenthour>.1)){
+            icon.innerHTML = `<i class="fa fa-moon-stars"></i>`;
+         }
+         else if (temp_condition === 'Cloud'  && (currenthour<18  && currenthour>4 )) {
             icon.innerHTML = `<i class="fa fa-cloud">  <span>  Cloud</span></i>`;
          }
-         else if (temp_condition === 'Rain') {
+         else if (temp_condition === 'Cloud'  && (currenthour< 23  && currenthour>18 )||(currenthour< 4 && currenthour>.1)) {
+            icon.innerHTML = `<i class="fa fa-cloud-moon"></i>`;
+         }
+         else if (temp_condition === 'Rain'  && (currenthour<18  && currenthour>4 ) ) {
             icon.innerHTML = `<i class="fa fa-cloud-rain">  <span>  rain</span></i>`;
          }
-         else if (temp_condition === 'Haze') {
+         else if (temp_condition === 'Rain'  && (currenthour< 23  && currenthour>18 )||(currenthour< 4 && currenthour>.1) ) {
+            icon.innerHTML = `<i class="fa fa-cloud-moon-rain"></i>`;
+         }
+         else if (temp_condition === 'Haze' && (currenthour<18  && currenthour>4 ) ) {
             icon.innerHTML = `<i class="fa fa-fog"> <span>  Haze</span></i>`;
          }
-         else {
-            icon.innerHTML = `<i class="fa fa-sun"> Clear</i>`;
+         else if (temp_condition === 'Haze' && (currenthour< 23  && currenthour>18 )||(currenthour< 4 && currenthour>.1) ) {
+            icon.innerHTML = `<i class="fa fa-moon"</i>`;
          }
-         datahide.classList.remove('data_hide');
+         else {
+            icon.innerHTML = `<i class="far fa-sun"> ${temp_condition}</i>`;
+         }
       } catch {
          city_name_res.innerText = "Plz write correct city name.";
          datahide.classList.add('data_hide');
