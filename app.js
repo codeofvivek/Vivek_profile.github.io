@@ -50,14 +50,14 @@ async function getinfo() {
          }else if(temp_condition === `Clear`  && (currenthour< 23  && currenthour>18 )||(currenthour< 4 && currenthour>.1)){
             icon.innerHTML = `<i class="fa fa-moon-stars"></i>`;
          }
-         else if (temp_condition === 'Cloud'  && (currenthour<18  && currenthour>4 )) {
-            icon.innerHTML = `<i class="fa fa-cloud">  <span>  Cloud</span></i>`;
+         else if (temp_condition === 'Clouds'  && (currenthour<18  && currenthour>4 )) {
+            icon.innerHTML = `<i class="fa fa-cloud"> </i>`;
          }
-         else if (temp_condition === 'Cloud'  && (currenthour< 23  && currenthour>18 )||(currenthour< 4 && currenthour>.1)) {
+         else if (temp_condition === 'Clouds'  && (currenthour< 23  && currenthour>18 )||(currenthour< 4 && currenthour>.1)) {
             icon.innerHTML = `<i class="fa fa-cloud-moon"></i>`;
          }
          else if (temp_condition === 'Rain'  && (currenthour<18  && currenthour>4 ) ) {
-            icon.innerHTML = `<i class="fa fa-cloud-rain">  <span>  rain</span></i>`;
+            icon.innerHTML = `<i class="fa fa-cloud-rain"> </i>`;
          }
          else if (temp_condition === 'Rain'  && (currenthour< 23  && currenthour>18 )||(currenthour< 4 && currenthour>.1) ) {
             icon.innerHTML = `<i class="fa fa-cloud-moon-rain"></i>`;
