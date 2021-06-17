@@ -42,7 +42,7 @@
 }
 body{
     font-family: 'Courier New', Courier, monospace;
-    background: url('drink1.jpg') fixed ;
+    background: url('image/drink1.jpg') fixed ;
     overflow-x: hidden;   
 }
 .navbar{
