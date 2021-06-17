@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="web.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body id="body">
+    <div class="round">
+        <a href="#body"><sub>^</sub>^<sub>^</sub></a>
+    </div>
+    <div class="navbar">
+        <a href="#body">
+            <h3>VG</h3>
+        </a>
+        <div class="menu">
+            <span id="change" onclick="TOGGLE()">&#9776</span>
+            <span class="closeicon" id="close" onclick="toggleclose()">&times;</span>
+            <ul id="list">
+                <li class="menu_list"> <a href="#home">Home</a></li>
+                <li class="menu_list"> <a href="#portfolio">Portfolio</a></li>
+                <li class="menu_list"> <a href="#about">About</a></li>
+                <li class="menu_list"> <a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidenav" id="sidenav">
+        <span class="close" id="closeicon" onclick="toggleclose()">&times;</span>
+        <a  href="#home" class="list" onclick="toggleclose()">Home</a>
+        <a href="#portfolio" class="list" onclick="toggleclose()">Portfolio</a>
+        <a href="#about" class="list" onclick="toggleclose()">About</a>
+        <a href="#contact" class="list" onclick="toggleclose()">Contact</a>
+    </div>
+    <div class="heading">
+        <h1 id="head">I am web developer....</h1>
+    </div>
+    <section class="section_1" id="home">
+        <div class="home">
+            <div class="image">
+                <img src="vivek3.jfif" alt="image">
+            </div>
+            <div class="Image_description">
+                <h2>I am Vivek Gupta</h2>
+            </div>
+        </div>
+    </section>
+    <div class="heading" id="portfolio">
+        <h1>Portfolio</h1>
+    </div>
+    <section class="section_1 sec2" id="section_2">
+        <div class="project" id="one">
+            <h2 class="topic">Scientific Calculator</h2>
+            <a href="https://codeofvivek.github.io/Vivek_profile.github.io/cal.html" target="_blank"> <img src="calculator.png"></a>
+        </div>
+        <div class="project" id="two">
+            <h2 class="topic">Demo Website</h2>
+            <a href="https://codeofvivek.github.io/Vivek_profile.github.io/" target="_blank"> <img
+                    src="portfolio.png"></a>
+        </div>
+        <div class="project" id="three">
+            <h2 class="topic">Weather web app</h2>
+            <a href="https://codeofvivek.github.io/Vivek_profile.github.io/app.html" target="_blank"> <img
+                src="weather.png"></a>
+        </div>
+        <div class="project" id="four">
+            <h2 class="topic">Project 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetu
+                r adipisicing elit. Fugit, mollitia doloremque aliquam
+                iusto nemo reiciendis qui sint accusantium. Eum, nisi.</p>
+        </div>
+    </section>
+    <div class="heading" id="about">
+        <h1>About</h1>
+    </div>
+    <section class="section_1 sec2" id="About">
+        <div class="home" id="about_home">
+            <div class="about">
+                <h4>Hello everyone I'm Vivek Gupta. Currently I am pursing B.Tech from NIT PATNA with electrical stream.
+                    Along with this I'm learning web development.
+                </h4>
+                <div class="skill">
+                <img src="drink.jpg">
+                </div>
+            </div>
+            <div class="detail">
+                <h3>you can find me on instagram.</h3>
+             <div class="insta">
+                <img src="user.png" alt="">
+                <p>Instagram</p>
+             </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="heading" id="contact">
+        <h1>Contact</h1>
+    </div>
+    <section class="section_1 sec2" id="Contact">
+        <div class="home contact">
+            <div class="form">
+                <h3>Get In Touch</h3>
+                <form id="contact_form">
+                    <label>Name</label>
+                    <input class="input-field" type="text" name="name" placeholder="Write your name" required>
+                    <label>Email</label>
+                    <input class="input-field" type="email" name="email" placeholder="Write your email" required>
+                    <label>Message</label>
+                    <textarea class="input-field" name="message" placeholder="Write your message"></textarea>
+                    <input id="submit_btn" type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <h2 class="footer_text">
+            Designed by @Vivek_Gupta.
+        </h2>
+    </footer>
+</body>
+
+</html>
